@@ -1,0 +1,171 @@
+
+html body {
+    background-color: #dadbd4; 
+    font-family: Lato; 
+}
+
+/* Milestone 1: Stile per la barra superiore */
+.bar {
+    background-color: #009688; 
+    width: 100%; 
+    height: 67px; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+}
+
+/* Milestone 1: Stile per il contenitore della chat */
+.chat {
+    width: 60%; 
+    height: 60%; 
+    position: relative; 
+    top: 20px; 
+    left: 0; 
+}
+
+/* Milestone 1: Stile per il pannello dei contatti */
+.contacts-panel {
+    background-color: #f8f9fa; 
+    border-right: 1px solid #dee2e6; 
+    height: 100%;
+}
+
+/* Milestone 2: Stile per la barra di ricerca contatti */
+.contact-list {
+    max-height: calc(100vh - 150px); 
+    overflow-y: auto; 
+}
+
+.chat-panel {
+    background-image: url(/img/mine.png);
+}
+
+/* Milestone 1: Stile per gli elementi della lista contatti */
+.contact-item {
+    cursor: pointer; 
+}
+
+/* Milestone 1: Colore di sfondo per gli elementi della lista contatti al passaggio del mouse */
+.contact-item:hover {
+    background-color: #e2e6ea; 
+}
+
+/* Milestone 3: Stile per i dettagli del contatto attivo */
+.contact-details {
+    padding: 10px; 
+}
+
+/* Milestone 3: Colore e dimensione del testo per l'ultimo accesso */
+.last-seen {
+    color: gray;
+    font-size: 12px;
+    margin-top: 2px;
+    position: relative;
+    top: 14px;
+    right: 53px;
+}
+
+.last {
+    color: gray;
+    font-size: 9px;
+    margin-top: 0px;
+    position: relative;
+    top: 12px;
+    right: 3px;
+
+}
+
+/* Milestone 5: Stile per i messaggi */
+.message {
+    padding: 10px; 
+    border-radius: 15px; 
+    max-width: 70%; 
+    word-wrap: break-word; 
+    opacity: 1;
+    transition: opacity 0.9s ease-out;
+}
+
+.message.removing {
+    opacity: 0;
+}
+
+/* Milestone 5: Stile per i messaggi ricevuti */
+.message.received {
+    background-color: #f0f0f0; 
+}
+
+/* Milestone 5: Stile per i messaggi inviati */
+.message.sent {
+    background-color: #dcf8c6; 
+}
+
+/*  Stile per il menu di eliminazione dei messaggi */
+.message-menu {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 14px;    
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;   
+    width: 148px;
+}
+
+/* Stile per i pulsanti delle azioni del messaggio */
+.message-actions {
+    margin-top: 5px; 
+    display: flex; 
+    gap: 10px; 
+}
+
+.message-actions button {
+    border: none; 
+    background: #007bff; 
+    color: white; 
+    padding: 5px; 
+    font-size: 12px; 
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+/* Colore di sfondo per i pulsanti al passaggio del mouse */
+.message-actions button:hover {
+    background-color: #0056b3; 
+}
+
+.contact .unread {
+    background-color: red;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.notify {
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa-face-smile {
+    padding: 10px;
+    
+}
+
+.fa-microphone {
+    padding: 10px;
+    color: gray;
+}
+
+.fa-chevron-down {
+    color: gray;
+    font-size: 9px;
+    margin-top: 0px;
+    position: relative;
+    top: -10px;
+    right: -82px;
+}
